@@ -30,10 +30,10 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname  + '/public'));
 
-app.use((req, res, next) => {
-    res.render('maintenance');
-
-})
+// app.use((req, res, next) => {
+//     res.render('maintenance');
+//
+// })
 
 // app.engine('hbs', hbs({
 //     extname: 'hbs',
