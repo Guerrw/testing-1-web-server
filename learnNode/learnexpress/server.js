@@ -6,6 +6,8 @@ const hbs = require('ejs')
 
 const fs  = require('fs');
 
+const port = process.env.PORT || 3000;
+
 
 
 app.set('view engine', 'ejs');
@@ -87,6 +89,6 @@ app.get('/bad', (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log('Port 3000: All Good in the Hood!')
+app.listen(port, () => {
+  console.log(`Port ${port} says: All Good in the Hood!` )
 });
